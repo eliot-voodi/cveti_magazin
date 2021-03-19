@@ -1,0 +1,41 @@
+<CTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+
+  <div id="header"><h1>Книжный мир</h1></div>
+  	<ul id="navbar">
+  <li><a href="../index.html">Главная</a></li>
+  <li><a href="../carzina.html">Каталог</a></li>
+  <li><a href="../contact.html">Контакты</a></li>
+  <li><a href="../cart.html">Корзина</a></li>
+  <li><a href="#">О нас</a></li>
+  	</ul>
+
+<div class="container mt-4">
+
+        <?php
+                if($_COOKIE['user'] == '');
+        ?>
+        <div class="row">
+                <div class="col">
+        <h1>форма авторизации</h1>
+        <form action="login.php" method="post">
+                <input type="text" class="from-control" name="login"
+                id="login" placeholder="Введите логин"><br>
+                <input type="password" class="from-contorl" name="pass"
+                id="pass" placeholder="Введите пароль"><br>
+                <button class="btn btn-success" type="submit">Авторизоваться</button>
+        </form>
+                </dev>
+</div>
+        </div>
+</body>
+</html>
